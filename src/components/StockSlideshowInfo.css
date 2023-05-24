@@ -1,0 +1,31 @@
+.StockSlideshowInfoBox{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+}
+
+
+.stock-name{
+   white-space: nowrap;
+
+}
+.stock-data-box {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 0.4rem;
+    white-space: nowrap;
+}
+img{
+    height: 0.7rem;
+}
+.stock-name, .stock-price{
+    font-weight: 600;
+    font-size: 1rem;
+}
+.stock-percentage-change{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgb(101, 101, 101);
+}
