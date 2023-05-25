@@ -4,9 +4,14 @@
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
   box-sizing: border-box;
+  
 }
 
 .container{
   width: 1024px;
   margin: auto;
+ 
+}
+body{
+  background-color: #F5F5FA;
 }
