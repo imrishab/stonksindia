@@ -1,7 +1,19 @@
-.StockInfoBox{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    margin: 1rem;
+.Positive{
+  color: rgb(0, 197, 0);
+}
+.Negative{
+    color: rgb(220, 0, 0);
+}
+.stock-name{
+font-size: 1rem;
+}
+/* .stock-ticker{
+
+
+}
+.stock-percentage-change{
+
+} */
+img{
+    height: 0.6rem;
 }
