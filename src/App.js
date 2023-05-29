@@ -5,12 +5,14 @@ import StockSlideshow from './StockSlideshow';
 
 
 
+
 function App() {
   return (
     <div className='container'>
       <Navbar />
       <StockSlideshow />
       <ScreenerSectionHome/>
+     
     </div>
   );
 }

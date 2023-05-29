@@ -13,6 +13,7 @@
     overflow: hidden;
     width: 100%;
     scrollbar-width: none;
+    cursor: default;
 
 }
 

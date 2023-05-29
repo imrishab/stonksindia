@@ -34,54 +34,34 @@ const StockSlideshow = () => {
       {[...Array(3)].map((_, index) => (
         <React.Fragment key={index}>
           <StockSlideshowInfo
-            StockName="Nifty 50"
-            StockPrice="18,143"
-            ChangePercentage={1.5}
+            nseCode="RELIANCE"
           />
           <StockSlideshowInfo
-            StockName="Reliance Industries"
-            StockPrice="2,448"
-            ChangePercentage={-0.28}
+            nseCode="ASIANPAINT"
           />
           <StockSlideshowInfo
-            StockName="Axis Bank"
-            StockPrice="823"
-            ChangePercentage={-1.45}
+            nseCode="AXISBANK"
           />
           <StockSlideshowInfo
-            StockName="Bajaj Finserv finance"
-            StockPrice="1,465"
-            ChangePercentage={0.77}
+           nseCode="BAJFINANCE"
           />
           <StockSlideshowInfo
-            StockName="Asian Paints"
-            StockPrice="1,934"
-            ChangePercentage={2.76}
+            nseCode="BATAINDIA"
           />
           <StockSlideshowInfo
-            StockName="jet Airways"
-            StockPrice="1,934"
-            ChangePercentage={2.76}
+            nseCode="HINDUNILVR"
           />
           <StockSlideshowInfo
-            StockName="Tata Elxsi"
-            StockPrice="1,934"
-            ChangePercentage={2.76}
+            nseCode="HDFC"
           />
           <StockSlideshowInfo
-            StockName="Dmart"
-            StockPrice="1,934"
-            ChangePercentage={2.76}
+           nseCode="RELIANCE"
           />
           <StockSlideshowInfo
-            StockName="Yes Bank"
-            StockPrice="1,934"
-            ChangePercentage={0.76}
+           nseCode="TCS"
           />
           <StockSlideshowInfo
-            StockName="HDFC AMC"
-            StockPrice="1,934"
-            ChangePercentage={-2.76}
+            nseCode="PIDILITIND"
           />
         </React.Fragment>
       ))}
