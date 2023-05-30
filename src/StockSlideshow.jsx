@@ -55,7 +55,7 @@ const StockSlideshow = () => {
             nseCode="HDFC"
           />
           <StockSlideshowInfo
-           nseCode="RELIANCE"
+           nseCode="ADANIPORTS"
           />
           <StockSlideshowInfo
            nseCode="TCS"
