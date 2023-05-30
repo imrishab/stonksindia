@@ -1,6 +1,7 @@
 import React from 'react'
-import StockInfo from "./StockInfo";
+// import StockInfo from "./StockInfo";
 import { FcLineChart } from "react-icons/fc";
+import IndexInfo from './indexInfo';
 
 import { IoIosArrowForward } from "react-icons/io";
 import './StockScreenerCard.css';
@@ -45,7 +46,7 @@ const StockScreenerCard = ({ SectionName }) => {
         alignItems: 'center',
         justifyContent: 'right',
 
-       
+
     }
 
     return (
@@ -62,100 +63,48 @@ const StockScreenerCard = ({ SectionName }) => {
 
             </div>
             <div className='CardBody'>
-                <StockInfo
-                    StockName="Reliance Industries"
-                    StockTicker="HDFCAMC"
-                    ChangePercentage={0.28}
-                    style={stockInfoStyles}
-                    NameStyle={stockNameStyles}
-                    TickerStyle={stockTickerStyle}
-                    PercentageChangeStyle={stockPercentageChangeStyle}
 
-                />
-                <StockInfo
-                    StockName="Reliance Industries"
-                    StockTicker="RELIANCEIND"
-                    ChangePercentage={-0.28}
-                    style={stockInfoStyles}
-                    NameStyle={stockNameStyles}
-                    TickerStyle={stockTickerStyle}
-                    PercentageChangeStyle={stockPercentageChangeStyle}
-                />
-                <StockInfo
-                    StockName="Reliance Industries"
-                    StockTicker="ITC"
-                    ChangePercentage={-0.28}
-                    style={stockInfoStyles}
-                    NameStyle={stockNameStyles}
-                    TickerStyle={stockTickerStyle}
-                    PercentageChangeStyle={stockPercentageChangeStyle}
+                <IndexInfo
 
+                    indexCode="NIFTY"
                 />
-                <StockInfo
-                    StockName="Reliance Industries"
-                    StockTicker="BAJAJFINSV
-                    "
-                    ChangePercentage={-0.28}
-                    style={stockInfoStyles}
-                    NameStyle={stockNameStyles}
-                    TickerStyle={stockTickerStyle}
-                    PercentageChangeStyle={stockPercentageChangeStyle}
+                <IndexInfo
+
+                    indexCode="BANKNIFTY"
                 />
-                <StockInfo
-                    StockName="Reliance Industries"
-                    StockTicker="ITC"
-                    ChangePercentage={-0.28}
-                    style={stockInfoStyles}
-                    NameStyle={stockNameStyles}
-                    TickerStyle={stockTickerStyle}
-                    PercentageChangeStyle={stockPercentageChangeStyle}
+                <IndexInfo
+
+                    indexCode="FINNIFTY"
                 />
-                <StockInfo
-                    StockName="HDFC Bank"
-                    StockTicker="ITC"
-                    ChangePercentage={0.28}
-                    style={stockInfoStyles}
-                    NameStyle={stockNameStyles}
-                    TickerStyle={stockTickerStyle}
-                    PercentageChangeStyle={stockPercentageChangeStyle}
+                <IndexInfo
+
+                    indexCode="NIFTY100"
                 />
-                <StockInfo
-                    StockName="Reliance Industries"
-                    StockTicker="ITC"
-                    ChangePercentage={-0.28}
-                    style={stockInfoStyles}
-                    NameStyle={stockNameStyles}
-                    TickerStyle={stockTickerStyle}
-                    PercentageChangeStyle={stockPercentageChangeStyle}
+                <IndexInfo
+
+                    indexCode="NIFTYMIDCAP"
                 />
-                <StockInfo
-                    StockName="Reliance Industries"
-                    StockTicker="ITC"
-                    ChangePercentage={10.5}
-                    style={stockInfoStyles}
-                    NameStyle={stockNameStyles}
-                    TickerStyle={stockTickerStyle}
-                    PercentageChangeStyle={stockPercentageChangeStyle}
+                <IndexInfo
+
+                    indexCode="NIFTYAUTO"
                 />
-                <StockInfo
-                    StockName="Reliance Industries"
-                    StockTicker="ITC"
-                    ChangePercentage={-0.28}
-                    style={stockInfoStyles}
-                    NameStyle={stockNameStyles}
-                    TickerStyle={stockTickerStyle}
-                    PercentageChangeStyle={stockPercentageChangeStyle}
+                <IndexInfo
+
+                    indexCode="NIFTYFMCG"
                 />
-                <StockInfo
-                    StockName="Reliance Industries"
-                    StockTicker="NESTLEIND
-                    "
-                    ChangePercentage={-0.28}
-                    style={stockInfoStyles}
-                    NameStyle={stockNameStyles}
-                    TickerStyle={stockTickerStyle}
-                    PercentageChangeStyle={stockPercentageChangeStyle}
+                <IndexInfo
+
+                    indexCode="NIFTYIT"
                 />
+                <IndexInfo
+
+                    indexCode="NIFTYPHARMA"
+                />
+                <IndexInfo
+
+                    indexCode="NIFTYMETAL"
+                />
+
             </div>
         </div>
     )

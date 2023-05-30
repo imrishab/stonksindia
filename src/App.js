@@ -13,16 +13,6 @@ function App() {
       <Navbar />
       <StockSlideshow />
       <ScreenerSectionHome />
-      <IndexInfo
-        indexCode="NIFTY"
-      />
-      <IndexInfo
-        indexCode="BANKNIFTY"
-      />
-      <IndexInfo
-        indexCode="FINNIFTY"
-      />
-
     </div>
   );
 }
