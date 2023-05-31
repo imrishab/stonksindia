@@ -3,8 +3,9 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './indexInfo.css';
 
-const IndexInfo = ({indexCode, indexName}) => {
+const IndexInfo = ({ indexCode }) => {
     const [indexData, setIndexData] = useState(null);
+    const [indexDayChangePercentage, setIndexDayChangePercentage] = useState(null);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -18,6 +19,18 @@ const IndexInfo = ({indexCode, indexName}) => {
                 const data = response.data.data.find(item => item.NSECode === indexCode);
                 console.log('Fetched data:', data);
                 setIndexData(data);
+
+                var sum = 0;
+                response.data.data.forEach(item => {
+                    sum += parseFloat(item.dayChangePerc)
+                })
+
+                setIndexDayChangePercentage(sum);
+
+
+                
+
+
             } catch (error) {
                 console.error('Error fetching stock data:', error);
             }
@@ -25,6 +38,12 @@ const IndexInfo = ({indexCode, indexName}) => {
 
         fetchData();
     }, [indexCode]);
+
+
+
+    useEffect(() => {
+        console.log("indexDayChangePercentage: ", indexDayChangePercentage);
+    }, [indexDayChangePercentage]);
 
 
     if (!indexData) {
@@ -57,6 +76,7 @@ const IndexInfo = ({indexCode, indexName}) => {
         </div>
     );
 };
+
 
 export default IndexInfo;
 

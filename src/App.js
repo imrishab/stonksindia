@@ -2,7 +2,8 @@ import './App.css';
 import Navbar from './NavBar';
 import ScreenerSectionHome from './ScreenerSectionHome';
 import StockSlideshow from './StockSlideshow';
-import IndexInfo from './components/indexInfo';
+import MarketMoodMeter from './components/marketMoodMeter';
+// import IndexInfo from './components/indexInfo';
 
 
 
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <StockSlideshow />
       <ScreenerSectionHome />
+      <MarketMoodMeter/>
     </div>
   );
 }

@@ -6,7 +6,7 @@ const ScreenerSectionHome = () => {
   return (
     <div className='ScreenerSectionHome'>
       <StockScreenerCard
-      SectionName={"Trending"}
+      SectionName={"Indices"}
       
       />
       <StockScreenerCard
