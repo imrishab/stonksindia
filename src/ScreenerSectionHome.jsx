@@ -1,6 +1,7 @@
 import React from 'react'
 import StockScreenerCard from './components/StockScreenerCard'
 import './ScreenerSectionHome.css'
+import MarketMoodMeter from './components/marketMoodMeter'
 
 const ScreenerSectionHome = () => {
   return (
@@ -13,10 +14,7 @@ const ScreenerSectionHome = () => {
       SectionName={"Top Gainers"}
       
       />
-      <StockScreenerCard
-      SectionName={"Trending"}
-      
-      />
+      <MarketMoodMeter/>
     </div>
   )
 }
